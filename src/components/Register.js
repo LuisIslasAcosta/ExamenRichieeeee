@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // Modificar los datos enviados para que coincidan con la estructura JSON
-      await axios.post("http://localhost:5000/users/", { 
+      await axios.post("http://3.145.113.231/users/", { 
         nombre, 
         email, 
         telefono,  // Incluir teléfono

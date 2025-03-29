@@ -9,7 +9,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/users/obtener");
+        const response = await axios.get("http://3.145.113.231/users/obtener");
         setUsers(response.data);  // Suponiendo que la respuesta es un array de usuarios
       } catch (error) {
         console.error("Error fetching users:", error);

@@ -15,7 +15,7 @@ const UserList = () => {
     }
 
     // Realizar la solicitud con el token JWT en los encabezados
-    axios.get("http://localhost:5000/users/obtener", {
+    axios.get("http://3.145.113.231/users/obtener", {
       headers: {
         Authorization: `Bearer ${token}`
       }
