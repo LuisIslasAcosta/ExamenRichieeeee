@@ -11,7 +11,7 @@ const Login = ({ setUser }) => {
     e.preventDefault();
     try {
       // Enviar solo email y password como en tu estructura de JSON
-      const response = await axios.post("http://3.145.113.231/users/login", { email, password });
+      const response = await axios.post("https://3.145.113.231/users/login", { email, password });
       
       // Almacenar solo los datos del usuario (sin token)
       setUser(response.data.usuario); // Asumimos que la respuesta contiene un objeto 'usuario'
